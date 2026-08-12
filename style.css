@@ -1,0 +1,874 @@
+/* ===========================================================
+   VIJAY PHARMACY MEDICAL STORE
+   style.css (Part 1)
+   =========================================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===================== RESET ===================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4fbff;
+    color:#222;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ===================== COLORS ===================== */
+
+:root{
+
+    --primary:#0080ff;
+    --secondary:#00c896;
+    --dark:#053b63;
+    --light:#ffffff;
+    --gray:#666;
+    --shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/* ===================== HEADER ===================== */
+
+header{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    z-index:1000;
+
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:10px;
+
+}
+
+.logo i{
+
+font-size:35px;
+color:var(--secondary);
+
+animation:pulse 2s infinite;
+
+}
+
+.logo h2{
+
+color:var(--primary);
+
+font-weight:700;
+
+}
+
+nav ul{
+
+display:flex;
+gap:30px;
+
+}
+
+nav ul li a{
+
+color:#333;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:var(--secondary);
+
+}
+
+.btn{
+
+padding:12px 28px;
+
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+
+border-radius:40px;
+
+color:white;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 30px rgba(0,200,150,.35);
+
+}
+
+/* ===================== HERO ===================== */
+
+.hero{
+
+margin-top:95px;
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+align-items:center;
+
+padding:80px 8%;
+
+gap:60px;
+
+}
+
+.hero-content h1{
+
+font-size:55px;
+
+line-height:1.3;
+
+color:var(--dark);
+
+}
+
+.hero-content span{
+
+color:var(--secondary);
+
+}
+
+.hero-content p{
+
+margin:25px 0;
+
+color:var(--gray);
+
+font-size:18px;
+
+line-height:30px;
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:linear-gradient(45deg,#0080ff,#00d4aa);
+
+color:white;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.hero-btn:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+.hero-image img{
+
+border-radius:30px;
+
+box-shadow:var(--shadow);
+
+animation:floatImage 4s ease-in-out infinite;
+
+}
+
+/* ===================== SECTION TITLE ===================== */
+
+.title{
+
+text-align:center;
+
+font-size:40px;
+
+color:var(--dark);
+
+margin-bottom:60px;
+
+position:relative;
+
+}
+
+.title::after{
+
+content:"";
+
+position:absolute;
+
+width:80px;
+
+height:5px;
+
+background:var(--secondary);
+
+left:50%;
+
+transform:translateX(-50%);
+
+bottom:-15px;
+
+border-radius:20px;
+
+}
+
+/* ===================== FEATURES ===================== */
+
+.features{
+
+padding:90px 8%;
+
+}
+
+.feature-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+text-align:center;
+
+border-radius:20px;
+
+transition:.4s;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+transform:translateY(-15px);
+
+}
+
+.card i{
+
+font-size:55px;
+
+color:var(--secondary);
+
+margin-bottom:20px;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+}
+
+/* ===================== POPULAR ===================== */
+
+.popular{
+
+padding:90px 8%;
+
+background:#eefaff;
+
+}
+
+.medicine-box{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.medicine-card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+transition:.4s;
+
+}
+
+.medicine-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.medicine-card img{
+
+height:220px;
+
+width:100%;
+
+object-fit:cover;
+
+}
+
+.medicine-card h3{
+
+padding:15px;
+
+color:var(--dark);
+
+}
+
+.medicine-card p{
+
+padding:0 15px;
+
+color:#555;
+
+}
+
+.medicine-card button{
+
+margin:20px 15px 25px;
+
+padding:12px 30px;
+
+border:none;
+
+background:linear-gradient(45deg,#0080ff,#00c896);
+
+color:white;
+
+border-radius:30px;
+
+cursor:pointer;
+
+font-size:15px;
+
+transition:.4s;
+
+}
+
+.medicine-card button:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ===================== SERVICES ===================== */
+
+.services{
+
+padding:90px 8%;
+
+}
+
+.service-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.service{
+
+padding:35px;
+
+background:white;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.service:hover{
+
+transform:translateY(-12px);
+
+}
+
+.service i{
+
+font-size:55px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+/* ===========================================================
+   VIJAY PHARMACY MEDICAL STORE
+   style.css (Part 2)
+   =========================================================== */
+
+/* ================= TESTIMONIAL ================= */
+
+.testimonial{
+
+    padding:90px 8%;
+    background:#f8fdff;
+
+}
+
+.review-box{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.review{
+
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.review:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.review img{
+
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    margin:auto;
+    margin-bottom:20px;
+    object-fit:cover;
+    border:5px solid #00c896;
+
+}
+
+.review h3{
+
+    margin-bottom:10px;
+    color:#053b63;
+
+}
+
+.review p{
+
+    color:#666;
+    line-height:28px;
+
+}
+
+/* ================= HEALTH TIPS ================= */
+
+.tips{
+
+    padding:90px 8%;
+    background:linear-gradient(135deg,#0080ff,#00c896);
+    color:white;
+
+}
+
+.tips .title{
+
+    color:white;
+
+}
+
+.tips .title::after{
+
+    background:white;
+
+}
+
+.tips-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+}
+
+.tips-grid div{
+
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    transition:.4s;
+
+}
+
+.tips-grid div:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.tips-grid h3{
+
+    margin-bottom:15px;
+
+}
+
+/* ================= FAQ ================= */
+
+.faq{
+
+    padding:90px 8%;
+
+}
+
+.question{
+
+    background:white;
+    margin-bottom:20px;
+    padding:25px;
+    border-left:6px solid #00c896;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.question h3{
+
+    margin-bottom:10px;
+    color:#053b63;
+
+}
+
+.question p{
+
+    color:#666;
+    line-height:28px;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#053b63;
+    color:white;
+    padding:70px 8% 30px;
+
+}
+
+.footer-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+
+}
+
+.footer-container h2,
+.footer-container h3{
+
+    margin-bottom:20px;
+
+}
+
+.footer-container p{
+
+    line-height:30px;
+    color:#ddd;
+
+}
+
+.copy{
+
+    text-align:center;
+    margin-top:25px;
+    color:#ddd;
+
+}
+
+hr{
+
+    margin-top:40px;
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,.25);
+
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#00c896;
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#e8f8ff;
+
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.2);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes floatImage{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+.hero-content,
+.hero-image,
+.card,
+.medicine-card,
+.service,
+.review,
+.question{
+
+animation:fadeUp 1s ease;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:991px){
+
+header{
+
+padding:15px 5%;
+
+}
+
+.hero{
+
+grid-template-columns:1fr;
+text-align:center;
+
+}
+
+.hero-content h1{
+
+font-size:42px;
+
+}
+
+.hero-image{
+
+margin-top:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+
+}
+
+.title{
+
+font-size:32px;
+
+}
+
+.hero{
+
+padding:50px 5%;
+
+}
+
+.hero-content h1{
+
+font-size:35px;
+
+}
+
+.hero-content p{
+
+font-size:16px;
+
+}
+
+.btn,
+.hero-btn{
+
+padding:12px 24px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.logo h2{
+
+font-size:22px;
+
+}
+
+.hero-content h1{
+
+font-size:28px;
+
+}
+
+.title{
+
+font-size:28px;
+
+}
+
+.card,
+.service,
+.review,
+.question{
+
+padding:20px;
+
+}
+
+.medicine-card img{
+
+height:180px;
+
+}
+
+.footer-container{
+
+text-align:center;
+
+}
+
+}
