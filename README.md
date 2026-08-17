@@ -41,31 +41,41 @@ Vijay_Pharmacy/
 │   ├── medicine2.png
 │   └── ...
 └── README.md
+
 📌 Main Sections
+
 🏠 Home
 A professional homepage introducing Vijay Pharmacy and its major services.
+
 💊 Medicines
 Displays different medicines and healthcare products in an organized catalogue.
 🩺 Services
 Provides information about pharmacy services, medicine support, and delivery.
+
 🎁 Products
 Shows various healthcare and pharmacy products available in the store.
+
 ℹ️ About
 Information about Vijay Pharmacy, its purpose, and customer-focused services.
+
 📞 Contact
 Provides pharmacy contact information and customer support details.
+
 📱 Responsive Design
 The website is designed to work smoothly on:
 💻 Desktop
 💻 Laptop
 📱 Mobile
 📲 Tablet
+
 👨‍💻 Developer
 B. Vijay
 3rd Year Computer Science & Engineering
 🎓 Project Purpose
 This project was developed as an academic web development project to demonstrate HTML, CSS, JavaScript, responsive design, website navigation, and user interface development.
+
 📄 License
 This project is created for educational and academic purposes.
+
 © 2026 Vijay Pharmacy Medical Store
 Designed & Developed by B. Vijay
