@@ -4,7 +4,7 @@ A modern, responsive pharmacy website designed and developed as a 3rd Year CSE p
 
 ## 🌐 Live Demo
 
-👉 Visit Vijay Pharmacy
+👉 https://vijay-959.github.io/Pharmacy/
 
 ## ✨ Features
 
